@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.a56b4f49.chunk.css",
-    "main.js": "/static/js/main.cd2769df.chunk.js",
-    "main.js.map": "/static/js/main.cd2769df.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.83db81e2.js",
-    "runtime-main.js.map": "/static/js/runtime-main.83db81e2.js.map",
-    "static/js/2.ad14bf93.chunk.js": "/static/js/2.ad14bf93.chunk.js",
-    "static/js/2.ad14bf93.chunk.js.map": "/static/js/2.ad14bf93.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.8d07d314631289ff9cce3293e4d2156a.js": "/precache-manifest.8d07d314631289ff9cce3293e4d2156a.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.a56b4f49.chunk.css.map": "/static/css/main.a56b4f49.chunk.css.map",
-    "static/js/2.ad14bf93.chunk.js.LICENSE.txt": "/static/js/2.ad14bf93.chunk.js.LICENSE.txt",
-    "static/media/Exo.css": "/static/media/Exo20-Thin.e4a28010.woff",
-    "static/media/App.sass": "/static/media/Pattern.24f7dfdc.png",
-    "static/media/Photo.png": "/static/media/Photo.4766b0a2.png",
-    "static/media/Trebuchet.css": "/static/media/TrebuchetMS.f2bb6f22.woff"
+    "main.css": "/react-catfood-store/static/css/main.0da6c3b3.chunk.css",
+    "main.js": "/react-catfood-store/static/js/main.cd2769df.chunk.js",
+    "main.js.map": "/react-catfood-store/static/js/main.cd2769df.chunk.js.map",
+    "runtime-main.js": "/react-catfood-store/static/js/runtime-main.43aaf525.js",
+    "runtime-main.js.map": "/react-catfood-store/static/js/runtime-main.43aaf525.js.map",
+    "static/js/2.ad14bf93.chunk.js": "/react-catfood-store/static/js/2.ad14bf93.chunk.js",
+    "static/js/2.ad14bf93.chunk.js.map": "/react-catfood-store/static/js/2.ad14bf93.chunk.js.map",
+    "index.html": "/react-catfood-store/index.html",
+    "precache-manifest.5b46573d0cb186693a78b67ba64d9f37.js": "/react-catfood-store/precache-manifest.5b46573d0cb186693a78b67ba64d9f37.js",
+    "service-worker.js": "/react-catfood-store/service-worker.js",
+    "static/css/main.0da6c3b3.chunk.css.map": "/react-catfood-store/static/css/main.0da6c3b3.chunk.css.map",
+    "static/js/2.ad14bf93.chunk.js.LICENSE.txt": "/react-catfood-store/static/js/2.ad14bf93.chunk.js.LICENSE.txt",
+    "static/media/Exo.css": "/react-catfood-store/static/media/Exo20-Thin.e4a28010.woff",
+    "static/media/App.sass": "/react-catfood-store/static/media/Pattern.24f7dfdc.png",
+    "static/media/Photo.png": "/react-catfood-store/static/media/Photo.4766b0a2.png",
+    "static/media/Trebuchet.css": "/react-catfood-store/static/media/TrebuchetMS.f2bb6f22.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.83db81e2.js",
+    "static/js/runtime-main.43aaf525.js",
     "static/js/2.ad14bf93.chunk.js",
-    "static/css/main.a56b4f49.chunk.css",
+    "static/css/main.0da6c3b3.chunk.css",
     "static/js/main.cd2769df.chunk.js"
   ]
 }
