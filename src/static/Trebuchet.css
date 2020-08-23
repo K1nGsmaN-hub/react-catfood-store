@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Trebuchet MS - bold';
+  src: url('../assets/Trebuchet/TrebuchetMS-Bold.eot');
+  src: url('../assets/Trebuchet/TrebuchetMS-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../assets/Trebuchet/TrebuchetMS-Bold.woff2') format('woff2'),
+  url('../assets/Trebuchet/TrebuchetMS-Bold.woff') format('woff'),
+  url('../assets/Trebuchet/TrebuchetMS-Bold.ttf') format('truetype'),
+  url('../assets/Trebuchet/TrebuchetMS-Bold.svg#TrebuchetMS-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Trebuchet MS';
+  src: url('../assets/Trebuchet/TrebuchetMS.eot');
+  src: url('../assets/Trebuchet/TrebuchetMS.eot?#iefix') format('embedded-opentype'),
+  url('../assets/Trebuchet/TrebuchetMS.woff2') format('woff2'),
+  url('../assets/Trebuchet/TrebuchetMS.woff') format('woff'),
+  url('../assets/Trebuchet/TrebuchetMS.ttf') format('truetype'),
+  url('../assets/Trebuchet/TrebuchetMS.svg#TrebuchetMS') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

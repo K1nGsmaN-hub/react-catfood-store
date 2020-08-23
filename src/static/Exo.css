@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Exo';
+  src: url('../assets/Exo/Exo20-Thin.eot');
+  src: url('../assets/Exo/Exo20-Thin.eot?#iefix') format('embedded-opentype'),
+  url('../assets/Exo/Exo20-Thin.woff2') format('woff2'),
+  url('../assets/Exo/Exo20-Thin.woff') format('woff'),
+  url('../assets/Exo/Exo20-Thin.ttf') format('truetype'),
+  url('../assets/Exo/Exo20-Thin.svg#Exo2.0-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
