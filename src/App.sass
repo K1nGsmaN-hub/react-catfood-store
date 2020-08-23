@@ -1,0 +1,57 @@
+.App
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: relative
+
+  text-align: center
+  font-family: 'Exo'
+
+  width: 100%
+  height: 100vh
+
+  &__title
+    margin: 0
+    padding-top: 70px
+    color: #fff
+    font-size: calc(24px + 36 * (100vw / 1920))
+
+  .bg-image
+    position: fixed
+
+    z-index: -1
+
+    width: 100vw
+    height: 100vh
+    background: url('./assets/Pattern.png') no-repeat center center fixed
+    background-size: cover
+
+
+    &__shadow
+      width: 100%
+      height: 100%
+
+  .cards
+    padding: 0 40px
+    margin-top: 50px
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+@media screen and (max-width: 1120px)
+  .App
+    &__title
+      padding-top: 30px
+    .cards
+      margin-top: 40px
+      flex-wrap: wrap
+@media screen and (max-height: 760px)
+  .App
+    .cards
+      padding: 0 20px
+
+@media screen and (max-width: 400px)
+  .App
+    .cards
+      margin-top: -55px
+      transform: scale(0.88, 0.88)

@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from "./components/card/card";
 
-import './App.css';
+import './App.sass';
 import './static/Exo.css'
 import shadow from './assets/Shadow.png'
 
@@ -21,7 +21,12 @@ function App() {
           portions = "10"
           mouse=""
           kg="0,5"
-          color="#1698d9"
+          descr= {(
+              <>
+                Чего сидишь? Порадуй котэ
+                <a> купи.</a>
+              </>
+          )}
         />
 
         <Card
@@ -32,6 +37,7 @@ function App() {
             mouse="2 мыши"
             kg="2"
             color="#d91667"
+            descr="Головы щучьи с чесноком да свежайшая сёмгушка."
         />
 
         <Card

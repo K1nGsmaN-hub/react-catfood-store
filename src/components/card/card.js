@@ -2,7 +2,7 @@ import React, {Component} from "react";
 
 import cat from '../../assets/Photo.png'
 
-import './card.css'
+import './card.sass'
 import '../../static/Trebuchet.css'
 
 export default class Card extends Component {
@@ -10,14 +10,53 @@ export default class Card extends Component {
     super(props);
 
     this.canvRef = React.createRef()
+    this.state = {
+      color: '#1698d9',
+      cardActive: false,
+      hoverActive: false
+    }
   }
 
   componentDidMount() {
     this.printCanvas()
   }
+  componentDidUpdate() {
+    this.printCanvas()
+  }
+
+  onCLick = () => {
+    this.setState(({hoverActive, cardActive}) => {
+      const curHover = false
+      const curCard = !cardActive
+      return {
+        hoverActive: curHover,
+        cardActive: curCard,
+        color: (curCard) ? '#d91667' : '#1698d9'
+      }
+    })
+  }
+
+  onMouseEnter = () => {
+    this.setState({
+      hoverActive: true,
+      color: '#d91667'
+    })
+  }
+
+  onMouseLeave = () => {
+    this.setState(({hoverActive, cardActive}) => {
+      const curColor = (cardActive) ? '#d91667' : '#1698d9'
+      return {
+        hoverActive: false,
+        color: curColor
+      }
+    })
+  }
 
   printCanvas = () => {
-    const {color} = this.props
+    const {inActive} = this.props
+    const color = (inActive) ? '#b3b3b3' : this.state.color
+
     const ctx = this.canvRef.current.getContext('2d')
 
     ctx.strokeStyle = color;
@@ -44,10 +83,17 @@ export default class Card extends Component {
   }
 
   render() {
-    const {inActive, supTitle, subTitle, title, kg, portions, mouse} = this.props
+    const {inActive, supTitle, subTitle, title, kg, portions, mouse, descr} = this.props
+
+    let color = (inActive) ? '#b3b3b3' : this.state.color
+
     const classList = (inActive) ? 'card card_in-active' : 'card'
     return (
-          <div className={classList}>
+          <div className={classList}
+               onClick={this.onCLick}
+               onMouseEnter={this.onMouseEnter}
+               onMouseLeave={this.onMouseLeave}
+          >
             <canvas ref={this.canvRef} width={320} height={480}></canvas>
             <div className="card__text">
               <p className="card__suptitle">{supTitle}</p>
@@ -57,9 +103,12 @@ export default class Card extends Component {
               <p className="card__mouse">{mouse ? <span>{mouse}</span> : 'мышь'} в подарок</p>
             </div>
             <img className="card__cat" src={cat} alt="cat"/>
-            <div className="card__weight">
+            <div className="card__weight" style={{backgroundColor: color}}>
               <p>{kg}</p>
               <span>кг</span>
+            </div>
+            <div className="description">
+              <p>{inActive ? `Печалька, ${title} ${subTitle} закончился.` : descr}</p>
             </div>
           </div>
     )

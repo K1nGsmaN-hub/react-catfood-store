@@ -1,0 +1,131 @@
+.card
+  cursor: pointer
+  width: 320px
+  height: 480px
+  position: relative
+  color: red
+  &:nth-child(2)
+    margin: 0 80px
+
+  &_in-active
+    .card__text
+      span, p, h1, h2
+        color: #b3b3b3
+    .card__text, .card__cat
+      opacity: 0.5
+    .description
+      p
+        color: #ffff66
+
+  &__text
+    text-align: left
+    padding-top: 24px
+    padding-left: 49px
+
+
+  &__suptitle
+    color: #666
+    font-family: "Trebuchet MS"
+    font-size: 16px
+    line-height: 16px
+    margin-bottom: 15px
+
+  &__title, &__subtitle
+    color: #000
+    font-family: "Trebuchet MS - bold"
+    font-size: 48px
+    line-height: 48px
+    margin-bottom: 4px
+
+  &__subtitle
+    font-size: 24px
+    line-height: 24px
+    margin-bottom: 16px
+
+  &__portions, &__mouse
+    color: #666
+    font-family: "Trebuchet MS"
+    font-size: 14px
+    line-height: 16px
+
+
+  &__portions span, &__mouse span
+    font-family: "Trebuchet MS - bold"
+
+
+  &__cat
+    position: absolute
+    bottom: 4px
+    left: 4px
+
+  &__weight
+    position: absolute
+    right: 15px
+    bottom: 15px
+
+    padding: 11px
+    width: 81px
+    height: 81px
+
+    border-radius: 100%
+    background-color: #1698d9
+
+    text-align: center
+
+  &__weight p, &__weight span
+    color: #fff
+    font-family: "Trebuchet MS"
+    font-size: 42px
+    font-weight: 400
+    line-height: 42px
+
+  .card__weight span
+    font-size: 21px
+    line-height: 21px
+
+  .description
+    text-align: center
+    position: absolute
+    width: 100%
+    bottom: -26px
+
+    color: #fff
+    font-family: "Trebuchet MS"
+    font-size: 13px
+    line-height: 16px
+
+    a
+      text-decoration: none
+      font-family: "Trebuchet MS - Bold"
+      color: #1698d9
+
+  canvas
+    position: absolute
+    z-index: -1
+    left: 0
+    top: 0
+
+@media screen and (max-width: 1200px)
+  .card
+    &:nth-child(2)
+      margin: 0 40px
+
+@media screen and (max-width: 1120px)
+  .card
+    &:nth-child(1), &:nth-child(2)
+      margin-bottom: 80px
+    &:nth-child(2)
+      margin-right: 0
+      margin-left: 40px
+    &:last-child
+      margin-bottom: 80px
+
+@media screen and (max-width: 760px)
+  .card
+    &:nth-child(2)
+      margin-left: 20px
+
+@media screen and (max-width: 700px)
+  .card
+    &:nth-child(2)
+      margin-left: 0
